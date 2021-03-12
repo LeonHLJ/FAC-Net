@@ -12,7 +12,7 @@
 * Python 3.6
 * Pytorch 1.2
 * Tensorboard Logger
-* CUDA 10.2
+* CUDA 10.0
 
 ### Data Preparation
 1. Prepare [THUMOS'14](https://www.crcv.ucf.edu/THUMOS14/) dataset.
