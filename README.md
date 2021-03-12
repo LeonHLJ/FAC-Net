@@ -35,6 +35,8 @@ You can easily train the model by running the provided script.
 $ python train_main.py
 ~~~~
 
+Models are saved in `.\ckpt` + `dataset_name` + `model_id`
+
 ### Evaulation
 
 #### Single stream evaluation
