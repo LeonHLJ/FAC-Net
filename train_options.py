@@ -6,7 +6,7 @@ parser = argparse.ArgumentParser(description='WSTAL')
 parser.add_argument('--gpus', type=int, default=[0], nargs='+', help='used gpu')
 parser.add_argument('--run-type', type=int, default=0,
                     help='train rgb (0) or train flow (1) or evaluate rgb (2) or evaluate flow (3)')
-parser.add_argument('--model-id', type=int, default=3, help='model id for saving model')
+parser.add_argument('--model-id', type=int, default=1, help='model id for saving model')
 
 # loading model
 parser.add_argument('--pretrained', default=False, help='is pretrained model')
@@ -43,7 +43,7 @@ parser.add_argument('--lambda-mil', default=0.1, help='balancing hyper-parameter
 
 # testing paramaters
 parser.add_argument('--class-threshold', type=float, default=0.1, help='class threshold for rejection')
-parser.add_argument('--start-threshold', type=float, default=0.035, help='start threshold for action localization')
+parser.add_argument('--start-threshold', type=float, default=0.032, help='start threshold for action localization')
 parser.add_argument('--end-threshold', type=float, default=0.055, help='end threshold for action localization')
 parser.add_argument('--threshold-interval', type=float, default=0.004, help='threshold interval for action localization')
 
