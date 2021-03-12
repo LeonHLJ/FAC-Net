@@ -18,7 +18,7 @@
 1. Prepare [THUMOS'14](https://www.crcv.ucf.edu/THUMOS14/) dataset.
     - We recommend using features and annotations provided by [this repo](https://github.com/sujoyp/wtalc-pytorch).
 
-2. Place the features and [annotations] (https://github.com/sujoyp/wtalc-pytorch/tree/master/Thumos14reduced-Annotations) inside a `dataset/Thumos14reduced/` folder.
+2. Place the features and [annotations](https://github.com/sujoyp/wtalc-pytorch/tree/master/Thumos14reduced-Annotations) inside a `dataset/Thumos14reduced/` folder.
 
 ## Usage
 
