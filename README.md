@@ -39,7 +39,7 @@ $ python train_main.py
 
 - Single stream evaluation
 
-Modify the argument of `model-id` in `train_options.py` to correspond to the training id, and set `run-type` as 2 (RGB) or 3 (optical flow). 
+-- Modify the argument of `model-id` in `train_options.py` to correspond to the training id, and et `rgb-load-epoch` and `flow-load-epoch` to the epoch of the best model, set `run-type` as 2 (RGB) or 3 (optical flow). 
 Run the command below.
 
 ~~~~
