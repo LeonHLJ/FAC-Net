@@ -15,7 +15,7 @@ parser.add_argument('--rgb-load-epoch', type=int, default=45, help='epoch of loa
 parser.add_argument('--flow-load-epoch', type=int, default=40, help='epoch of loaded model')
 
 # dataset patameters
-parser.add_argument('--dataset-root', default='/home/jlhuang/code/Data/WSD_Data/', help='dataset root path')
+parser.add_argument('--dataset-root', default='your_dataset_path', help='dataset root path')
 parser.add_argument('--dataset-name', default='Thumos14reduced', help='dataset to train on')
 
 # input paramaters
