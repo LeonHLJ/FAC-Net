@@ -25,11 +25,11 @@
 ### Training
 You can easily train the model by running the provided script.
 
-- First, refer to `train_options.py`. Modify the argument of `dataset-root` to the path of your `dataset` folder.
+- Refer to `train_options.py`. Modify the argument of `dataset-root` to the path of your `dataset` folder.
 
-- Second, modify the argument of `run-type` to 0 (RGB) or 1 (optical flow) and make sure you use different `model-id` for RGB and optical flow.
+- Modify the argument of `run-type` to 0 (RGB) or 1 (optical flow) and make sure you use different `model-id` for RGB and optical flow.
 
-- Third, run the command below.
+- Run the command below.
 
 ~~~~
 $ python train_main.py
@@ -37,19 +37,24 @@ $ python train_main.py
 
 ### Evaulation
 
-- Single stream evaluation
+#### Single stream evaluation
 
--- Modify the argument of `model-id` in `train_options.py` to correspond to the training id, and et `rgb-load-epoch` and `flow-load-epoch` to the epoch of the best model, set `run-type` as 2 (RGB) or 3 (optical flow). 
-Run the command below.
+- Modify the argument of `model-id` in `train_options.py` to correspond to the training id
+- Set the argument of `load-epoch` to the epoch of the best model
+- Set `run-type` as 2 (RGB) or 3 (optical flow). 
+- Run the command below.
 
 ~~~~
 $ python train_main.py
 ~~~~
 
-- Two stream evaluation
+#### Single stream evaluation
 
-Modify the argument of `rgb-model-id` and `flow-model-id` in `test_options.py` to correspond to the training ids, and set `rgb-load-epoch` and `flow-load-epoch` to the epoch of the best model.
-Run the command below.
+- Modify the argument of `rgb-model-id` and `flow-model-id` in `test_options.py` to correspond to the training ids
+
+- Set `rgb-load-epoch` to the epoch of the best RGB model and do the same on the `flow-load-epoch`.
+
+- Run the command below.
 
 ~~~~
 $ python test_main.py
