@@ -5,14 +5,14 @@ parser = argparse.ArgumentParser(description='WTALC')
 
 # basic setting
 parser.add_argument('--gpus', type=int, default=[0], nargs='+', help='used gpu')
-parser.add_argument('--rgb-model-id', type=int, default=3, help='model id for saving model (first stream)')
-parser.add_argument('--flow-model-id', type=int, default=4, help='model id for saving model (second stream)')
+parser.add_argument('--rgb-model-id', type=int, default=1, help='model id for saving model (first stream)')
+parser.add_argument('--flow-model-id', type=int, default=2, help='model id for saving model (second stream)')
 
 # loading model
 parser.add_argument('--seed', type=int, default=1, help='random seed (default: 1)')
 parser.add_argument('--pretrained', default=True, help='is pretrained model')
-parser.add_argument('--rgb-load-epoch', type=int, default=45, help='epoch of loaded model')
-parser.add_argument('--flow-load-epoch', type=int, default=40, help='epoch of loaded model')
+parser.add_argument('--rgb-load-epoch', type=int, default=100, help='epoch of loaded model')
+parser.add_argument('--flow-load-epoch', type=int, default=100, help='epoch of loaded model')
 
 # dataset patameters
 parser.add_argument('--dataset-root', default='your_dataset_path', help='dataset root path')
