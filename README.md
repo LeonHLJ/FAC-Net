@@ -39,6 +39,9 @@ Models are saved in `./ckpt/dataset_name/model_id/`
 
 ### Evaulation
 
+#### 
+The pre-trained model can be found [here](https://drive.google.com/drive/folders/1XMkyHwtZFJP4CZwK3qBfjrkvJ_RNeUxQ?usp=sharing). You can evaluate the model refering to the two stream evaluation process.
+
 #### Single stream evaluation
 
 - Modify the argument of `model-id` in `train_options.py` to correspond to the training id
@@ -50,7 +53,7 @@ Models are saved in `./ckpt/dataset_name/model_id/`
 $ python train_main.py
 ~~~~
 
-#### Single stream evaluation
+#### Two stream evaluation
 
 - Modify the argument of `rgb-model-id` and `flow-model-id` in `test_options.py` to correspond to the training ids
 
