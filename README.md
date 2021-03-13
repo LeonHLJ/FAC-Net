@@ -51,14 +51,14 @@ You can easily train the model by running the provided script.
 
 - Refer to `train_options.py`. Modify the argument of `dataset-root` to the path of your `dataset` folder.
 
-- Modify the argument of `run-type` to 0 (RGB) or 1 (optical flow) and make sure you use different `model-id` for RGB and optical flow.
-
 - Run the command below.
 
 ~~~~
-$ python train_main.py
+$ python train_main.py --run-type 0 --model-id 1   # rgb stream
+$ python train_main.py --run-type 1 --model-id 2   # flow stream
 ~~~~
 
+Make sure you use different `model-id` for RGB and optical flow.
 Models are saved in `./ckpt/dataset_name/model_id/`
 
 ### Evaulation
@@ -68,26 +68,26 @@ The pre-trained model can be found [here](https://drive.google.com/drive/folders
 
 #### Single stream evaluation
 
-- Modify the argument of `model-id` in `train_options.py` to correspond to the training id
-- Set the argument of `load-epoch` to the epoch of the best model
-- Set `run-type` as 2 (RGB) or 3 (optical flow). 
 - Run the command below.
 
 ~~~~
-$ python train_main.py
+$ python train_main.py --run-type 2 --model-id 1 --load-epoch 100  # rgb stream
+$ python train_main.py --run-type 3 --model-id 2 --load-epoch 100  # flow stream
 ~~~~
+
+`load-epoch` refers to the epoch of the best model. The best model would not always occur at 100 epoch, please refer to the log in the same folder of saved models to set the load epoch of the best model.
+Make sure you set the right `model-id` that corresponds to the `model-id` during training.
+
 
 #### Two stream evaluation
 
-- Modify the argument of `rgb-model-id` and `flow-model-id` in `test_options.py` to correspond to the training ids
-
-- Set `rgb-load-epoch` to the epoch of the best RGB model and do the same on the `flow-load-epoch`.
-
 - Run the command below.
 
 ~~~~
-$ python test_main.py
+$ python test_main.py --rgb-model-id 1 --flow-model-id 2 --rgb-load-epoch 100 --flow-load-epoch 100
 ~~~~
+
+Make sure you set the right `rgb-model-id` and `flow-model-id`. 
 
 ## References
 We referenced the repos below for the code.
