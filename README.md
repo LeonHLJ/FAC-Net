@@ -22,7 +22,7 @@ As a challenging task of high-level video understanding, weakly supervised tempo
 | [RPN](https://ojs.aaai.org/index.php/AAAI/article/view/6760/6614) | 62.3 | 57.0 | 48.2 | 37.2 | 27.9 | 16.7 | 8.1 | 36.8 |
 | [DGAM](https://dl.acm.org/doi/pdf/10.1145/3343031.3351044) | 60.0 | 54.2 | 46.8 | 38.2 | 28.8 | 19.8 | 11.4 | 37.0 |
 | [TSCN](https://arxiv.org/pdf/2010.11594) | 63.4 | 57.6 | 47.8 | 37.7 | 28.7 | 19.4 | 10.2 | 37.8 |
-| [EM-MIL](https://arxiv.org/abs/1911.09963) | 59.1 | 52.7 | 45.5 | 36.8 | 30.5 | 22.7 | 16.4 | 37.7 |
+| [EM-MIL](https://arxiv.org/abs/1911.09963) | 59.1 | 52.7 | 45.5 | 36.8 | 30.5 | 22.7 | **16.4** | 37.7 |
 | [BaS-Net](https://arxiv.org/abs/1911.09963) | 58.2 | 52.3 | 44.6 | 36.0 | 27.0 | 18.6 | 10.4 | 27.9 |
 | [A2CL-PT](https://arxiv.org/pdf/2007.06643) | 61.2 | 56.1 | 48.1 | 39.0 | 30.1 | 19.2 | 10.6 | 37.8 |
 | [ACM-BANet](https://dl.acm.org/doi/pdf/10.1145/3394171.3413687) | 64.6 | 57.7 | 48.9 | 40.9 | 32.3 | 21.9 | 13.5 | 39.9 |
