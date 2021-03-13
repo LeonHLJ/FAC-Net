@@ -94,7 +94,7 @@ We referenced the repos below for the code.
 
 * [STPN](https://github.com/bellos1203/STPN)
 * [W-TALC](https://github.com/sujoyp/wtalc-pytorch)
-* [BaSNet](https://github.com/Pilhyeon/BaSNet-pytorch)
+* [BaS-Net](https://github.com/Pilhyeon/BaSNet-pytorch)
 
 ## Citation
 If you find this code useful, please cite our paper.
