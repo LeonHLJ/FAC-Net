@@ -28,7 +28,7 @@ We argue that existing methods for weakly-supervised temporal activity localizat
 | [ACM-BANet](https://dl.acm.org/doi/pdf/10.1145/3394171.3413687) | 64.6 | 57.7 | 48.9 | 40.9 | 32.3 | 21.9 | 13.5 | 39.9 |
 | [HAM-Net](https://arxiv.org/pdf/2101.00545) | 65.4 | 59.0 | 50.3 | 41.1 | 31.0 | 20.7 | 11.1 | 39.8 |
 | [UM](https://arxiv.org/abs/2006.07006) | 67.5 | 61.2 | 52.3 | 43.4 | **33.7** | **22.9** | 12.1 | 41.9 |
-| [HAM-Net](https://arxiv.org/abs/1911.09963) | **67.6** | **62.1** | **52.6** | **44.3** | 33.4 | 22.5 | 12.7 | **42.2** |
+| [**FAC-Net (Ours)**](https://arxiv.org/abs/1911.09963) | **67.6** | **62.1** | **52.6** | **44.3** | 33.4 | 22.5 | 12.7 | **42.2** |
 
 ## Prerequisites
 ### Recommended Environment
