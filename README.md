@@ -1,7 +1,7 @@
 # FAC-Net
 
 > **Foreground-Action Consistency Network fo Weakly-supervised Temporal Action Localization**<br>
-> Linjiang Huang (CUHK), Hongsheng Li (CUHK)
+> Linjiang Huang (CUHK), Hongsheng Li (CUHK), Liang Wang (CASIA)
 >
 > Paper: 
 >
