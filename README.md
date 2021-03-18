@@ -1,5 +1,4 @@
 # FAC-Net
-### Official Pytorch Implementation of '[Foreground-Action Consistency Network fo Weakly-supervised Temporal Action Localization]
 
 > **Foreground-Action Consistency Network fo Weakly-supervised Temporal Action Localization**<br>
 > Linjiang Huang (CUHK), Hongsheng Li (CUHK)
