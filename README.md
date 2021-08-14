@@ -80,13 +80,11 @@ Make sure you set the right `model-id` that corresponds to the `model-id` during
 
 #### Two stream evaluation
 
-- Run the command below.
+- Run the command below using our provided models.
 
 ~~~~
 $ python test_main.py --rgb-model-id 1 --flow-model-id 2 --rgb-load-epoch 100 --flow-load-epoch 100
 ~~~~
-
-Make sure you set the right `rgb-model-id` and `flow-model-id`. 
 
 ## References
 We referenced the repos below for the code.
@@ -99,7 +97,13 @@ We referenced the repos below for the code.
 If you find this code useful, please cite our paper.
 
 ~~~~
+@inproceedings{huang2021foreground,
+  title={Foreground-Action Consistency Network for Weakly-supervised Temporal Action Localization},
+  author={Linjiang Huang, Liang Wang and Hongsheng Li},
+  booktitle={IEEE/CVF International Conference on Computer Vision},
+  year={2021},
+}
 ~~~~
 
 ## Contact
-If you have any question or comment, please contact the first author of the paper - Linjiang Huang (ljhuang@cpii.hk).
+If you have any question or comment, please contact the first author of the paper - Linjiang Huang (ljhuang524@gmail.com).
