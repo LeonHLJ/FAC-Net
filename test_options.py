@@ -31,6 +31,6 @@ parser.add_argument('--dropout', default=0.5, help='dropout value (default: 0.5)
 
 # testing paramaters
 parser.add_argument('--class-threshold', type=float, default=0.1, help='class threshold for rejection')
-parser.add_argument('--start-threshold', type=float, default=0.032, help='start threshold for action localization')
+parser.add_argument('--start-threshold', type=float, default=0.03, help='start threshold for action localization')
 parser.add_argument('--end-threshold', type=float, default=0.055, help='end threshold for action localization')
-parser.add_argument('--threshold-interval', type=float, default=0.004, help='threshold interval for action localization')
+parser.add_argument('--threshold-interval', type=float, default=0.005, help='threshold interval for action localization')
