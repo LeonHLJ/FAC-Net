@@ -258,28 +258,50 @@ def getLocMAP(seg_preds, th, annotation_path, args):
         # Compare predictions and gt
         tp, fp = [], []
         for i in range(len(segment_predict)):
-            flag = 0.
+            matched = False
+            best_iou = 0
             for j in range(len(segment_gt)):
                 if segment_predict[i][0] == segment_gt[j][0]:
                     gt = range(int(round(segment_gt[j][1] * factor)), int(round(segment_gt[j][2] * factor)))
                     p = range(int(segment_predict[i][1]), int(segment_predict[i][2]))
                     IoU = float(len(set(gt).intersection(set(p)))) / float(len(set(gt).union(set(p))))
                     if IoU >= th:
-                        flag = 1.
-                        del segment_gt[j]
-                        break
-            tp.append(flag)
-            fp.append(1. - flag)
+                        matched = True
+                        if IoU > best_iou:
+                            best_iou = IoU
+                            best_j = j
+            if matched:
+                del segment_gt[best_j]
+            tp.append(float(matched))
+            fp.append(1. - float(matched))
         tp_c = np.cumsum(tp)
         fp_c = np.cumsum(fp)
         if sum(tp) == 0:
             prc = 0.
         else:
-            prc = np.sum((tp_c / (fp_c + tp_c)) * tp) / gtpos
+            cur_prec = tp_c / (fp_c + tp_c)
+            cur_rec = tp_c / gtpos
+            prc = _ap_from_pr(cur_prec, cur_rec)
         ap.append(prc)
 
-    # return ap
-    return 100 * np.mean(ap)
+    if ap:
+        return 100 * np.mean(ap)
+    else:
+        return 0
+
+
+# Inspired by Pascal VOC evaluation tool.
+def _ap_from_pr(prec, rec):
+    mprec = np.hstack([[0], prec, [0]])
+    mrec = np.hstack([[0], rec, [1]])
+
+    for i in range(len(mprec) - 1)[::-1]:
+        mprec[i] = max(mprec[i], mprec[i + 1])
+
+    idx = np.where(mrec[1::] != mrec[0:-1])[0] + 1
+    ap = np.sum((mrec[idx] - mrec[idx - 1]) * mprec[idx])
+
+    return ap
 
 
 def compute_iou(dur1, dur2):
