@@ -7,7 +7,7 @@
 >
 
 ## Overview
-We argue that existing methods for weakly-supervised temporal activity localization cannot guarantee the foreground-action consistency, that is, the foreground and actions are mutually inclusive. Therefore, we propose a novel method named Foreground-Action Consistency Network (FAC-Net) to address this issue. Our method outperforms all the previous state-of-the-art approaches.
+We argue that existing methods for weakly-supervised temporal activity localization cannot guarantee the foreground-action consistency, that is, the foreground and actions are mutually inclusive. Therefore, we propose a novel method named Foreground-Action Consistency Network (FAC-Net) to address this issue. The experimental results on THUMOS14 are as below.
 
 | Method \ mAP(%) | @0.1 | @0.2 | @0.3 | @0.4 | @0.5 | @0.6 | @0.7 | AVG |
 |:----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
