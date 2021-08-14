@@ -93,17 +93,8 @@ We referenced the repos below for the code.
 * [W-TALC](https://github.com/sujoyp/wtalc-pytorch)
 * [BaS-Net](https://github.com/Pilhyeon/BaSNet-pytorch)
 
-## Citation
 If you find this code useful, please cite our paper.
 
-~~~~
-@inproceedings{huang2021foreground,
-  title={Foreground-Action Consistency Network for Weakly-supervised Temporal Action Localization},
-  author={Linjiang Huang, Liang Wang and Hongsheng Li},
-  booktitle={IEEE/CVF International Conference on Computer Vision},
-  year={2021},
-}
-~~~~
 
 ## Contact
 If you have any question or comment, please contact the first author of the paper - Linjiang Huang (ljhuang524@gmail.com).
