@@ -97,7 +97,7 @@ def getActLoc(vid_preds, frm_preds, vid_lens, act_thresh_cas, annotation_path, a
                 e = [idk for idk, item in enumerate(vid_pred_diff) if item == -1]
                 for j in range(len(s)):
                     len_proposal = e[j] - s[j]
-                    if len_proposal >= 3:
+                    if len_proposal >= 2:
                         inner_score = np.mean(vid_cas[s[j]:e[j] + 1])
                         outer_s = max(0, int(s[j]- 0.25 * len_proposal))
                         outer_e = min(int(vid_cas.shape[0]-1), int(e[j] + 0.25 * len_proposal + 1))
