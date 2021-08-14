@@ -63,7 +63,7 @@ Models are saved in `./ckpt/dataset_name/model_id/`
 ### Evaulation
 
 #### 
-The pre-trained model can be found [here](https://drive.google.com/drive/folders/1XMkyHwtZFJP4CZwK3qBfjrkvJ_RNeUxQ?usp=sharing). You can evaluate the model referring to the two stream evaluation process.
+The trained model can be found [here](https://drive.google.com/drive/folders/1XMkyHwtZFJP4CZwK3qBfjrkvJ_RNeUxQ?usp=sharing). Please change the file name to xxx.pkl (e.g., 100.pkl) and put it into `./ckpt/dataset_name/model_id/`. You can evaluate the model referring to the two stream evaluation process.
 
 #### Single stream evaluation
 
