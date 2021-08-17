@@ -4,7 +4,7 @@
 > Linjiang Huang (CUHK), Liang Wang (CASIA), Hongsheng Li (CUHK)
 >
 > Paper: 
->
+> https://arxiv.org/pdf/2108.06524.pdf
 
 ## Overview
 We argue that existing methods for weakly-supervised temporal activity localization cannot guarantee the foreground-action consistency, that is, the foreground and actions are mutually inclusive. Therefore, we propose a novel method named Foreground-Action Consistency Network (FAC-Net) to address this issue. The experimental results on THUMOS14 are as below.
