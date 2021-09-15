@@ -9,7 +9,7 @@ parser.add_argument('--run-type', type=int, default=0,
 parser.add_argument('--model-id', type=int, default=1, help='model id for saving model')
 
 # loading model
-parser.add_argument('--pretrained', default=False, help='is pretrained model')
+parser.add_argument('--pretrained', action='store_true', default=False, help='is pretrained model')
 parser.add_argument('--load-epoch', type=int, default=None, help='epoch of loaded model')
 
 # storing parameters
