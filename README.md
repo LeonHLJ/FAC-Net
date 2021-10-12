@@ -95,6 +95,16 @@ We referenced the repos below for the code.
 
 If you find this code useful, please cite our paper.
 
+~~~~
+@InProceedings{Huang_2021_ICCV,
+    author    = {Huang, Linjiang and Wang, Liang and Li, Hongsheng},
+    title     = {Foreground-Action Consistency Network for Weakly Supervised Temporal Action Localization},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2021},
+    pages     = {8002-8011}
+}
+~~~~
 
 ## Contact
 If you have any question or comment, please contact the first author of the paper - Linjiang Huang (ljhuang524@gmail.com).
