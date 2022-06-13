@@ -3,8 +3,7 @@
 > **Foreground-Action Consistency Network for Weakly Supervised Temporal Action Localization**<br>
 > Linjiang Huang (CUHK), Liang Wang (CASIA), Hongsheng Li (CUHK)
 >
-> Paper: 
-> > [![arXiv](https://img.shields.io/badge/arXiv-2108.06524-b31b1b.svg?style=plastic)](https://arxiv.org/abs/2108.06524) [![ICCV2021](https://img.shields.io/badge/ICCV-2021-brightgreen.svg?style=plastic)](https://openaccess.thecvf.com/content/ICCV2021/papers/Huang_Foreground-Action_Consistency_Network_for_Weakly_Supervised_Temporal_Action_Localization_ICCV_2021_paper.pdf)
+> [![arXiv](https://img.shields.io/badge/arXiv-2108.06524-b31b1b.svg?style=plastic)](https://arxiv.org/abs/2108.06524) [![ICCV2021](https://img.shields.io/badge/ICCV-2021-brightgreen.svg?style=plastic)](https://openaccess.thecvf.com/content/ICCV2021/papers/Huang_Foreground-Action_Consistency_Network_for_Weakly_Supervised_Temporal_Action_Localization_ICCV_2021_paper.pdf)
 
 
 ## Overview
