@@ -33,7 +33,7 @@ We argue that existing methods for weakly-supervised temporal activity localizat
 ## Prerequisites
 ### Recommended Environment
 * Python 3.6
-* Pytorch 1.2
+* Pytorch 1.5
 * Tensorboard Logger
 * CUDA 10.0
 
