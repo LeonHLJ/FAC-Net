@@ -35,7 +35,7 @@ We argue that existing methods for weakly-supervised temporal activity localizat
 * Python 3.6
 * Pytorch 1.5
 * Tensorboard Logger
-* CUDA 10.0
+* CUDA 10.1
 
 ### Data Preparation
 1. Prepare [THUMOS'14](https://www.crcv.ucf.edu/THUMOS14/) dataset.
